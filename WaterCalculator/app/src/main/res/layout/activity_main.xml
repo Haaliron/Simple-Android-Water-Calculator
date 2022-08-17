@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/banner_bg"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:shadowColor="#323232"
+        android:shadowDx="3"
+        android:shadowDy="0"
+        android:shadowRadius="2"
+        android:text="Basit Su Verileri Hesaplayıcı"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/engineText"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_bg_left"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Motor Verimi"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <TextView
+        android:id="@+id/basmaText"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_bg_mid"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Basma Yüksekliği"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/powerText"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_bg_right_down"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Güç"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <TextView
+        android:id="@+id/flowText"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_bg_left_down"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Debi"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <ImageView
+        android:id="@+id/engineImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/engineText"
+        app:layout_constraintEnd_toEndOf="@+id/engineText"
+        app:layout_constraintStart_toStartOf="@+id/engineText"
+        app:layout_constraintTop_toTopOf="@+id/engineText"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@drawable/motor" />
+
+    <ImageView
+        android:id="@+id/basmaImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/basmaText"
+        app:layout_constraintEnd_toEndOf="@+id/basmaText"
+        app:layout_constraintStart_toStartOf="@+id/basmaText"
+        app:layout_constraintTop_toTopOf="@+id/basmaText"
+        app:layout_constraintVertical_bias="0.788"
+        app:srcCompat="@drawable/pump" />
+
+    <ImageView
+        android:id="@+id/flowImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/flowText"
+        app:layout_constraintEnd_toEndOf="@+id/flowText"
+        app:layout_constraintStart_toStartOf="@+id/flowText"
+        app:layout_constraintTop_toTopOf="@+id/flowText"
+        app:layout_constraintVertical_bias="0.766"
+        app:srcCompat="@drawable/debi" />
+
+    <ImageView
+        android:id="@+id/powerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/powerText"
+        app:layout_constraintEnd_toEndOf="@+id/powerText"
+        app:layout_constraintStart_toStartOf="@+id/powerText"
+        app:layout_constraintTop_toTopOf="@+id/powerText"
+        app:layout_constraintVertical_bias="0.766"
+        app:srcCompat="@drawable/power" />
+
+    <TextView
+        android:id="@+id/hydrolicText"
+        android:layout_width="90dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_bg_right"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:text="Hidrolik Verim"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
+
+    <ImageView
+        android:id="@+id/hydrolicImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hydrolicText"
+        app:layout_constraintEnd_toEndOf="@+id/hydrolicText"
+        app:layout_constraintStart_toStartOf="@+id/hydrolicText"
+        app:layout_constraintTop_toTopOf="@+id/hydrolicText"
+        app:layout_constraintVertical_bias="0.777"
+        app:srcCompat="@drawable/statistics" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
